@@ -29,6 +29,16 @@ h1 {
 
 #app-concept {
   border-radius: 10% 10% 0 0;
+  animation: brighten 1s;
+}
+
+@keyframes brighten {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .to-top {
