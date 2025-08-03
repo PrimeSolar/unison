@@ -1,10 +1,14 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Set the margin of the element */
+  padding: 0; /* Set the padding of the element */
 }
 
 .gradient-background {
-  background: linear-gradient(300deg, #cc3344, #ff4f68);
+  background: linear-gradient(
+    300deg,
+    #cc3344,
+    #ff4f68
+  ); /* Set the background of the element */
   background-size: 180% 180%;
   animation: gradient-animation 1s ease infinite;
 }
@@ -24,7 +28,12 @@ body {
 }
 
 h1 {
-  color: #fff !important;
+  color: #ffffff !important;
+}
+
+#concept-div {
+  margin-left: auto; /* Set the left margin of the element */
+  margin-right: auto; /* Set the right margin of the element */
 }
 
 #app-concept {
@@ -41,14 +50,83 @@ h1 {
   }
 }
 
+#stack-area {
+  width: 100%; /* Set the width of the element */
+  height: 350vh;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+#left,
+#right {
+  flex-basis: 50%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+#left {
+  left: 0;
+}
+
+.card {
+  position: absolute;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+  width: 350px;
+  height: 350px;
+  border-radius: 25px;
+  margin-bottom: 10px; /* Set the bottom margin of the element */
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+#card1 {
+  background-color: #ff4759;
+}
+
+#card2 {
+  background-color: #ff3252;
+}
+
+#card3 {
+  background-color: #ff2040;
+}
+
+#card4 {
+  background-color: #ff0a2f;
+}
+
+#card5 {
+  background-color: #f50025;
+}
+
+.away {
+  transform-origin: bottom left;
+}
+
+#testimonial > div > div {
+  height: 85vh;
+  padding: 0; /* Set the padding of the element */
+  margin: 0; /* Set the margin of the element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.highlight {
+  color: #ff4f68; /* Set the background of the element */
+}
+
 .to-top {
-  background: #ff4f68;
+  background: #ff4f68; /* Set the background of the element */
   position: fixed;
   bottom: 56px;
   right: 15px;
   width: 45px;
   height: 45px;
-  border: solid 1px #fff;
   border-radius: 50%;
   z-index: 1;
   opacity: 0;
@@ -67,12 +145,6 @@ h1 {
   opacity: 1;
 }
 
-.badge-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-}
-
 .profile-img {
   height: 100px;
   border-radius: 50%;
@@ -80,15 +152,35 @@ h1 {
 
 footer {
   color: #fff;
+  width: 100%;
+}
+
+#contact {
+  padding: 0; /* Set the padding of the element */
+  margin: 0; /* Set the margin of the element */
+}
+
+#contact > .container {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 footer p {
-  margin: 0;
-  padding: 0 0 20px;
+  margin: 0; /* Set the margin of the element */
+  padding: 0 0 20px; /* Set the padding of the element */
 }
 
 a {
   color: #fff;
+}
+
+@media print {
+  button {
+    display: none !important;
+  }
 }
 
 /* noscript */
@@ -97,11 +189,11 @@ noscript #enable-javascript {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 25vw;
+  padding: 0 25vw; /* Set the padding of the element */
 }
 
 noscript h2 {
-  margin: 5vh;
+  margin: 5vh; /* Set the margin of the element */
 }
 
 noscript main {
@@ -109,7 +201,7 @@ noscript main {
 }
 
 noscript h2 {
-  padding: 5vh 0 0;
+  padding: 5vh 0 0; /* Set the padding of the element */
 }
 
 noscript p {
@@ -122,10 +214,10 @@ noscript details {
 }
 
 noscript details summary {
-  margin: 1vh;
+  margin: 1vh; /* Set the margin of the element */
   text-align: center;
 }
 
 li {
-  margin: 0.5vh 0;
+  margin: 0.5vh 0; /* Set the margin of the element */
 }
