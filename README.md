@@ -3,12 +3,12 @@
 &nbsp;&nbsp;This repository contains source code files for a website promoting Unison, a unique dating app that focuses on fostering harmonious connections between individuals based on compatibility in various aspects of life. The application goes beyond traditional matching algorithms and incorporates elements of emotional intelligence, shared values, and personal growth. It aims to create a supportive and uplifting community where users can find meaningful relationships that resonate with their true selves.
 
 - [Unison ❤](#unison-)
-  - [Key Features of the Application](#key-features-of-the-application)
+  - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Support My Work ☕](#support-my-work-)
   - [Contact Me 💬](#contact-me-)
 
-## Key Features of the Application
+## Features
 
 - **Emotional Intelligence Assessment**: users can take an emotional intelligence assessment to better understand their own emotions, communication style, and relationship preferences. This data is used to match users with compatible partners who complement their emotional needs.
 
@@ -39,6 +39,19 @@
 </a>
 
 &nbsp;&nbsp;Thank you for your support! Together, we can create something wonderful! 💖
+
+**Copyright Notice**
+
+Copyright © Vladislav Kazantsev
+All rights reserved.
+This repository contains the intellectual property of Vladislav Kazantsev, including the code and related files.
+You are welcome to clone this repository and use the code for exploratory purposes.
+However, unauthorized reproduction, modification, or redistribution of this code (including cloning of this repository or altering it for activities beyond exploratory use) is strictly prohibited.
+Code snippets may be shared only when the original author is explicitly credited and a direct link to the original source of the code is provided alongside the code snippet.
+Sharing links to the repository or its files is permitted, except when directed toward retrieval purposes.
+Any form of interaction with this repository or its files is strictly prohibited when facilitated by the code, except when such interaction is for discussion or exchange purposes with others.
+This copyright notice applies globally.
+Email address for inquiries about collaboration, usage outside exploratory purposes, or permissions: [hypervisor7@pm.me](mailto:hypervisor7@pm.me)
 
 <a name="contact-me"></a>
 
