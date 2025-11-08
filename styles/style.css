@@ -14,8 +14,8 @@
  */
 
 body {
-  margin: 0; /* Set the margin of the element */
-  padding: 0; /* Set the padding of the element */
+  margin: 0; /* Set the margin of the element. */
+  padding: 0; /* Set the padding of the element. */
 }
 
 .gradient-background {
@@ -23,7 +23,7 @@ body {
     300deg,
     #cc3344,
     #ff4f68
-  ); /* Set the background of the element */
+  ); /* Set the background of the element. */
   background-size: 180% 180%;
   animation: gradient-animation 1s ease infinite;
 }
@@ -43,17 +43,17 @@ body {
 }
 
 h1 {
-  color: #ffffff !important;
+  color: #ffffff !important; /* Set the color for the text of the element. */
 }
 
 #concept-div {
-  margin-left: auto; /* Set the left margin of the element */
-  margin-right: auto; /* Set the right margin of the element */
+  margin-left: auto; /* Set the left margin of the element. */
+  margin-right: auto; /* Set the right margin of the element. */
 }
 
 #app-concept {
-  border-radius: 10% 10% 0 0;
   animation: brighten 1s;
+  border-radius: 10% 10% 0 0;
 }
 
 @keyframes brighten {
@@ -66,9 +66,9 @@ h1 {
 }
 
 #stack-area {
-  width: 100%; /* Set the width of the element */
-  height: 350vh;
-  position: relative;
+  width: 100%; /* Set the width of the element. */
+  height: 350vh; /* Set the height of the element. */
+  position: relative; /* Specify the positioning method for the element. */
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -77,18 +77,18 @@ h1 {
 #left,
 #right {
   flex-basis: 50%;
-  height: 100vh;
-  position: sticky;
+  height: 100vh; /* Set the height of the element. */
+  position: sticky; /* Specify the positioning method for the element. */
   top: 0;
 }
 
 #left {
   left: 0;
+  padding: 0 5vw; /* Set the padding of the element. */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 5vw;
 }
 
 #right {
@@ -100,21 +100,21 @@ h1 {
 }
 
 .card {
-  position: absolute;
+  position: absolute; /* Specify the positioning method for the element. */
   top: calc(50% - 175px);
   left: calc(50% - 175px);
-  width: 350px;
-  height: 350px;
+  width: 350px; /* Set the width of the element. */
+  height: 350px; /* Set the height of the element. */
   border-radius: 25px;
-  margin-bottom: 10px; /* Set the bottom margin of the element */
-  color: #ffffff;
+  margin-bottom: 10px; /* Set the bottom margin of the element. */
+  color: #ffffff; /* Set the color for the text of the element. */
   transition: 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 15px;
+  padding: 15px; /* Set the padding of the element. */
 }
 
 .card p:nth-of-type(1) {
@@ -125,20 +125,20 @@ h1 {
 
 @media (max-width: 780px) {
   #left {
-    padding: 0 5vw;
+    padding: 0 5vw; /* Set the padding of the element. */
   }
 
   .card {
     top: calc(50% - 150px);
     left: calc(50% - 150px);
-    width: 300px;
-    height: 300px;
+    width: 300px; /* Set the width of the element. */
+    height: 300px; /* Set the height of the element. */
   }
 }
 
 @media (max-width: 450px) {
   #stack-area {
-    height: 100vh;
+    height: 100vh; /* Set the height of the element. */
     flex-direction: column;
   }
 
@@ -148,7 +148,7 @@ h1 {
   }
 
   #right {
-    height: 25vh;
+    height: 25vh; /* Set the height of the element. */
   }
 }
 
@@ -177,25 +177,25 @@ h1 {
 }
 
 #testimonial > div > div {
-  height: 85vh;
-  padding: 0; /* Set the padding of the element */
-  margin: 0; /* Set the margin of the element */
+  height: 85vh; /* Set the height of the element. */
+  padding: 0; /* Set the padding of the element. */
+  margin: 0; /* Set the margin of the element. */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .highlight {
-  color: #ff4f68; /* Set the color for the text of the element */
+  color: #ff4f68; /* Set the color for the text of the element. */
 }
 
 .to-top {
-  background: #ff4f68; /* Set the background of the element */
-  position: fixed;
+  background: #ff4f68; /* Set the background of the element. */
+  position: fixed; /* Specify the positioning method for the element. */
   bottom: 56px;
   right: 15px;
-  width: 45px;
-  height: 45px;
+  width: 45px; /* Set the width of the element. */
+  height: 45px; /* Set the height of the element. */
   border-radius: 50%;
   z-index: 1;
   opacity: 0;
@@ -215,62 +215,62 @@ h1 {
 }
 
 .profile-img {
-  height: 100px;
+  height: 100px; /* Set the height of the element. */
   border-radius: 50%;
 }
 
 footer {
-  color: #ffffff;
-  width: 100%;
+  color: #ffffff; /* Set the color for the text of the element. */
+  width: 100%; /* Set the width of the element. */
 }
 
 #contact {
-  padding: 25px 0 38px; /* Set the padding of the element */
-  margin: 0; /* Set the margin of the element */
+  padding: 25px 0 38px; /* Set the padding of the element. */
+  margin: 0; /* Set the margin of the element. */
 }
 
 #contact > .container {
-  height: 15vh;
+  height: 15vh; /* Set the height of the element. */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100%; /* Set the width of the element. */
 }
 
 footer p {
-  margin: 0; /* Set the margin of the element */
-  padding: 0 0 20px; /* Set the padding of the element */
+  margin: 0; /* Set the margin of the element. */
+  padding: 0 0 20px; /* Set the padding of the element. */
 }
 
 a {
-  color: #fff;
+  color: #ffffff; /* Set the color for the text of the element. */
 }
 
 .bmc-button {
-  display: block; /* Specify the display behavior of the element */
-  width: fit-content; /* Set the width of the element */
-  height: 3rem; /* Set the height of the element */
-  margin: 0 auto 25px; /* Set the size for the margin of the element */
-  background-color: #ff843f !important; /* Set the color for the background of the element */
-  color: #ffffff; /* Set the color for the text of the element */
-  font-family: "Cookie", cursive; /* Set the font family for the text of the element */
-  font-weight: bold; /* Set the font weight for the text of the element */
-  text-decoration: none; /* Set the decoration for the text of the element */
-  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element */
+  display: block; /* Specify the display behavior of the element. */
+  width: fit-content; /* Set the width of the element. */
+  height: 3rem; /* Set the height of the element. */
+  margin: 0 auto 25px; /* Set the size for the margin of the element. */
+  background-color: #ff843f !important; /* Set the color for the background of the element. */
+  color: #ffffff; /* Set the color for the text of the element. */
+  font-family: "Cookie", cursive; /* Set the font family for the text of the element. */
+  font-weight: bold; /* Set the font weight for the text of the element. */
+  text-decoration: none; /* Set the decoration for the text of the element. */
+  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element. */
   border: none;
-  padding: 10px 20px; /* Set the padding of the element */
-  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element */
+  padding: 10px 20px; /* Set the padding of the element. */
+  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element. */
   outline: none;
-  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element */
-  /* Set the border radius for the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
-  -moz-border-radius: 5px; /* For older versions of Firefox */
-  -o-border-radius: 5px; /* For older versions of Opera */
-  border-radius: 5px; /* Standard property for border radius */
-  /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
-  -o-transition: 0.5s; /* For older versions of Opera */
-  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
+  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element. */
+  /* Set the border radius for the corners of the element. */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari. */
+  -moz-border-radius: 5px; /* For older versions of Firefox. */
+  -o-border-radius: 5px; /* For older versions of Opera. */
+  border-radius: 5px; /* Standard property for border radius. */
+  /* Add a transition effect for changes in properties. */
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari. */
+  -o-transition: 0.5s; /* For older versions of Opera. */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .bmc-button:active {
@@ -280,14 +280,14 @@ a {
 
 @media (max-width: 1290px) {
   #testimonial {
-    padding: 50px 0;
+    padding: 50px 0; /* Set the padding of the element. */
   }
 
   #contact {
     display: block;
-    position: relative;
+    position: relative; /* Specify the positioning method for the element. */
     bottom: 0;
-    padding: 35px 0 70px;
+    padding: 35px 0 70px; /* Set the padding of the element. */
   }
 
   #contact container {
@@ -295,8 +295,8 @@ a {
   }
 
   .bmc-button {
-    margin: 0 auto 0; /* Set the size for the margin of the element */
-    height: auto;
+    margin: 0 auto 0; /* Set the size for the margin of the element. */
+    height: auto; /* Set the height of the element. */
   }
 }
 
@@ -314,7 +314,7 @@ a {
 
 @media (max-width: 1000px) and (max-height: 430px) {
   #testimonial > div > div {
-    height: 150vh;
+    height: 150vh; /* Set the height of the element. */
     margin-top: 0.25rem !important;
     padding-top: 0 !important;
   }
@@ -331,21 +331,21 @@ a {
   }
 
   #stack-area {
-    height: 50vh;
+    height: 50vh; /* Set the height of the element. */
   }
 }
 
-/* noscript */
+/* noscript. */
 noscript #enable-javascript {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 25vw; /* Set the padding of the element */
+  padding: 0 25vw; /* Set the padding of the element. */
 }
 
 noscript h2 {
-  margin: 5vh; /* Set the margin of the element */
+  margin: 5vh; /* Set the margin of the element. */
 }
 
 noscript main {
@@ -353,7 +353,7 @@ noscript main {
 }
 
 noscript h2 {
-  padding: 5vh 0 0; /* Set the padding of the element */
+  padding: 5vh 0 0; /* Set the padding of the element. */
 }
 
 noscript p {
@@ -366,10 +366,10 @@ noscript details {
 }
 
 noscript details summary {
-  margin: 1vh; /* Set the margin of the element */
+  margin: 1vh; /* Set the margin of the element. */
   text-align: center;
 }
 
 li {
-  margin: 0.5vh 0; /* Set the margin of the element */
+  margin: 0.5vh 0; /* Set the margin of the element. */
 }
