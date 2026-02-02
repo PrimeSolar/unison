@@ -16,7 +16,7 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// Scroll to Top Button
+/** The scroll to top button. */
 class scrollToTop extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -43,7 +43,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Cards
+/** The cards. */
 let cards = document.querySelectorAll(".card");
 
 let stackArea = document.querySelector("#stack-area");
@@ -89,11 +89,11 @@ window.addEventListener("scroll", () => {
   rotateCards();
 });
 
-// Footer
+/** The footer. */
 const year = new Date().getFullYear();
 class footerContainer extends HTMLElement {
   connectedCallback() {
-    // Define Footer Content:
+    /** Define the footer content. */
     this.innerHTML += `
     <section id="contact" class="gradient-background">
       <div class="container pt-4 mt-2">
