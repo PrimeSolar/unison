@@ -1,5 +1,7 @@
 /*
- * Script
+ * The Paragraph Indentation Script
+ *
+ * This script runs after the DOM has loaded and inserts an indent at the start of every paragraph that meets these conditions: it's not inside an ancestor with class "center", it does not have class "card-text" or "testimonial", and a previous element sibling of its parent does not have class "teammate", ensuring consistent formatting for improved readability.
  *
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
