@@ -1,7 +1,7 @@
 /*
  * The Paragraph Indentation Script
  *
- * This script runs after the DOM has loaded and inserts an indent at the start of every paragraph that meets these conditions: it's not inside an ancestor with class "center", it does not have class "card-text" or "testimonial", and a previous element sibling of its parent does not have class "teammate", ensuring consistent formatting for improved readability.
+ * This script runs after the DOM has loaded and inserts an indent at the start of every paragraph if it's not inside an ancestor with class "center", ensuring consistent formatting for improved readability.
  *
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
@@ -15,9 +15,11 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-const p = document.getElementsByTagName("p");
-for (let x of p) {
-  if (x.closest(".text-center") == null) {
-    x.innerHTML = "&nbsp;&nbsp;" + x.innerHTML;
+document.addEventListener("DOMContentLoaded", () => {
+  const p = document.getElementsByTagName("p");
+  for (let x of p) {
+    if (x.closest(".center") === null) {
+      x.innerHTML = "&nbsp;&nbsp;" + x.innerHTML;
+    }
   }
-}
+});
