@@ -24,7 +24,7 @@ body {
     #cc3344,
     #ff4f68
   ); /* Set the background of the element. */
-  background-size: 180% 180%;
+  background-size: 180% 180%; /* Set the size for the background of the element. */
   animation: gradient-animation 1s ease infinite;
 }
 
@@ -89,6 +89,11 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#left h2 {
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }
 
 #right {
@@ -183,6 +188,14 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.text-body-emphasis {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: calc(1.15rem + 0.7vw);
+  line-height: 1.2;
 }
 
 .highlight {
@@ -300,15 +313,10 @@ a {
   }
 }
 
-@media (max-width: 430px) {
-  .brands {
-    padding-bottom: 3rem !important;
-    margin-bottom: 3rem !important;
-  }
-
-  .brands .row {
-    padding-bottom: 3rem !important;
-    margin-bottom: 3rem !important;
+@media (max-width: 680px) {
+  .text-body-emphasis {
+    font-size: 1.17rem !important;
+    line-height: 1 !important;
   }
 }
 
