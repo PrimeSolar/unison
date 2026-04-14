@@ -16,20 +16,37 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
+/** The loading screen accessible focus management. */
+function manageFocus() {
+  if (document.body.classList.contains("loading")) {
+    document.querySelector(".loader").focus();
+  } else {
+    // Return focus to main content when loading complete
+    document.querySelector("main")?.focus();
+  }
+}
+// Call on page load and when loading state changes
+window.addEventListener("load", manageFocus);
+
 /** The scroll to top button. */
-class scrollToTop extends HTMLElement {
+class ScrollToTop extends HTMLElement {
   connectedCallback() {
-    this.innerHTML += `
-    <a href="#" class="to-top" aria-label="Scroll to top" title="Scroll to top">
+    this.innerHTML = `
+    <a class="to-top" aria-label="Scroll to top" title="Scroll to top">
       <svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="11.5" fill="none" stroke="white" stroke-width="1"/>
-        <path d="M6 15L12 9L18 15" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 15L12 9L18 15" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
     `;
+
+    this.querySelector(".to-top").addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
 }
-customElements.define("scroll-to-top-button", scrollToTop);
+customElements.define("scroll-to-top-button", ScrollToTop);
 
 const scrollToTopButton = document.createElement("scroll-to-top-button");
 document.querySelector("main").appendChild(scrollToTopButton);
@@ -46,7 +63,7 @@ window.addEventListener("scroll", () => {
 /** The cards. */
 let cards = document.querySelectorAll(".card");
 
-let stackArea = document.querySelector("#stack-area");
+let stackArea = document.querySelector(".stack-area");
 
 function rotateCards() {
   let angle = 0;
@@ -79,7 +96,7 @@ window.addEventListener("scroll", () => {
 
   index = Math.floor(index);
 
-  for (i = 0; i < cards.length; i++) {
+  for (let i = 0; i < cards.length; i++) {
     if (i <= index) {
       cards[i].classList.add("away");
     } else {
@@ -89,13 +106,13 @@ window.addEventListener("scroll", () => {
   rotateCards();
 });
 
-/** The footer. */
+/** The custom footer element. */
 const year = new Date().getFullYear();
-class footerContainer extends HTMLElement {
+class FooterContainer extends HTMLElement {
   connectedCallback() {
     /** Define the footer content. */
     this.innerHTML += `
-    <section id="contact" class="gradient-background">
+    <section class="contact gradient-background">
       <div class="container pt-4 mt-2">
         <footer>
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -112,6 +129,6 @@ class footerContainer extends HTMLElement {
     </section>`;
   }
 }
-customElements.define("footer-container", footerContainer);
+customElements.define("footer-container", FooterContainer);
 
 console.log("components.js is completed");
