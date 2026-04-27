@@ -1,6 +1,9 @@
 /*
  * Style Sheet
- *
+ * 
+ * Includes detailed property comments to support
+ * stakeholders with varying CSS knowledge.
+ * 
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
  * This code is the intellectual property of Vladislav Kazantsev.
@@ -16,6 +19,16 @@
 body {
   margin: 0; /* Set the margin of the element. */
   padding: 0; /* Set the padding of the element. */
+  max-width: 100%;
+  width: 100%; /* Set the width of the element. */
+  overflow-x: hidden;
+  animation: brighten 1s;
+}
+
+/* The style sheet includes detailed property comments
+to support stakeholders with varying CSS knowledge. */
+.loader {
+  display: none; /* Specify the display behavior of the element. */
 }
 
 .gradient-background {
@@ -42,61 +55,63 @@ body {
   }
 }
 
+/* Here and after !important usage is intentional for Bootstrap framework overrides. */
 h1 {
   color: #ffffff !important; /* Set the color for the text of the element. */
 }
 
-#concept-div {
+.concept-div {
   margin-left: auto; /* Set the left margin of the element. */
   margin-right: auto; /* Set the right margin of the element. */
 }
 
-#app-concept {
-  animation: brighten 1s;
+.app-concept {
   border-radius: 10% 10% 0 0;
 }
 
-@keyframes brighten {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+img {
+  vertical-align: unset;
 }
 
-#stack-area {
-  width: 100%; /* Set the width of the element. */
-  height: 350vh; /* Set the height of the element. */
+.stack-area {
   position: relative; /* Specify the positioning method for the element. */
+  margin: 0; /* Set the margin of the element. */
+  width: 100%; /* Set the width of the element. */
+  max-width: 100%;
+  height: 350vh; /* Set the height of the element. */
+  padding: 0; /* Set the padding of the element. */
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
 }
 
-#left,
-#right {
+.stack-area::-webkit-scrollbar {
+  display: none; /* Specify the display behavior of the element. */
+}
+
+.left,
+.right {
   flex-basis: 50%;
   height: 100vh; /* Set the height of the element. */
   position: sticky; /* Specify the positioning method for the element. */
   top: 0;
 }
 
-#left {
+.left {
   left: 0;
   padding: 0 5vw; /* Set the padding of the element. */
-  display: flex;
+  display: flex; /* Specify the display behavior of the element. */
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#left h2 {
+.left h2 {
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
 }
 
-#right {
+.right {
   left: 0;
   display: flex;
   flex-direction: column;
@@ -129,7 +144,7 @@ h1 {
 }
 
 @media (max-width: 780px) {
-  #left {
+  .left {
     padding: 0 5vw; /* Set the padding of the element. */
   }
 
@@ -142,38 +157,38 @@ h1 {
 }
 
 @media (max-width: 450px) {
-  #stack-area {
+  .stack-area {
     height: 100vh; /* Set the height of the element. */
     flex-direction: column;
   }
 
-  #left {
+  .left {
     height: 50vh;
     flex-basis: 35%;
   }
 
-  #right {
+  .right {
     height: 25vh; /* Set the height of the element. */
   }
 }
 
-#card1 {
+.card1 {
   background-color: #ff4759;
 }
 
-#card2 {
+.card2 {
   background-color: #ff3252;
 }
 
-#card3 {
+.card3 {
   background-color: #ff2040;
 }
 
-#card4 {
+.card4 {
   background-color: #ff0a2f;
 }
 
-#card5 {
+.card5 {
   background-color: #f50025;
 }
 
@@ -181,8 +196,8 @@ h1 {
   transform-origin: bottom left;
 }
 
-#testimonial > div > div {
-  height: 85vh; /* Set the height of the element. */
+.testimonial > div > div {
+  height: 100vh; /* Set the height of the element. */
   padding: 0; /* Set the padding of the element. */
   margin: 0; /* Set the margin of the element. */
   display: flex;
@@ -202,6 +217,38 @@ h1 {
   color: #ff4f68; /* Set the color for the text of the element. */
 }
 
+.brands {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands img {
+  height: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the element. */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background of the element. */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4759; /* Set the background of the element. */
+  /* Set the border radius for the corners of the element. */
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari. */
+  -moz-border-radius: 10px; /* For older versions of Firefox. */
+  -o-border-radius: 10px; /* For older versions of Opera. */
+  border-radius: 10px; /* Standard property for border radius. */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4f68; /* Set the background of the element. */
+}
+
 .to-top {
   background: #ff4f68; /* Set the background of the element. */
   position: fixed; /* Specify the positioning method for the element. */
@@ -217,7 +264,7 @@ h1 {
   justify-content: center;
   font-size: 16px;
   text-decoration: none;
-  pointer-events: none;
+  cursor: pointer;
   transition: 0.25s;
 }
 
@@ -237,12 +284,12 @@ footer {
   width: 100%; /* Set the width of the element. */
 }
 
-#contact {
+.contact {
   padding: 25px 0 38px; /* Set the padding of the element. */
   margin: 0; /* Set the margin of the element. */
 }
 
-#contact > .container {
+.contact > .container {
   height: 15vh; /* Set the height of the element. */
   display: flex;
   justify-content: center;
@@ -292,24 +339,35 @@ a {
 }
 
 @media (max-width: 1290px) {
-  #testimonial {
+  .testimonial {
     padding: 50px 0; /* Set the padding of the element. */
   }
 
-  #contact {
-    display: block;
+  .contact {
+    display: block; /* Specify the display behavior of the element. */
     position: relative; /* Specify the positioning method for the element. */
     bottom: 0;
     padding: 35px 0 70px; /* Set the padding of the element. */
   }
 
-  #contact container {
-    display: block;
+  .contact container {
+    display: block; /* Specify the display behavior of the element. */
   }
 
   .bmc-button {
     margin: 0 auto 0; /* Set the size for the margin of the element. */
     height: auto; /* Set the height of the element. */
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    height: 100vh;
+    min-height: fit-content;
+  }
+
+  .brands {
+    flex-direction: column;
   }
 }
 
@@ -321,7 +379,7 @@ a {
 }
 
 @media (max-width: 1000px) and (max-height: 430px) {
-  #testimonial > div > div {
+  .testimonial > div > div {
     height: 150vh; /* Set the height of the element. */
     margin-top: 0.25rem !important;
     padding-top: 0 !important;
@@ -333,18 +391,24 @@ a {
   }
 }
 
+@media (max-width: 380px) {
+  .stack-area {
+    overflow-x: hidden;
+  }
+}
+
 @media print {
   button {
-    display: none !important;
+    display: none !important; /* Specify the display behavior of the element. */
   }
 
-  #stack-area {
+  .stack-area {
     height: 50vh; /* Set the height of the element. */
   }
 }
 
 /* noscript. */
-noscript #enable-javascript {
+noscript .enable-javascript {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,7 +421,7 @@ noscript h2 {
 }
 
 noscript main {
-  display: none;
+  display: none; /* Specify the display behavior of the element. */
 }
 
 noscript h2 {
