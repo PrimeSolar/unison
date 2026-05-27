@@ -18,6 +18,10 @@
 
 /** The loading screen accessible focus management. */
 function manageFocus() {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   if (document.body.classList.contains("loading")) {
     document.querySelector(".loader").focus();
   } else {
