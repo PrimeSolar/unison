@@ -72,6 +72,7 @@ let stackArea = document.querySelector(".stack-area");
 function rotateCards() {
   let angle = 0;
   cards.forEach((card, index) => {
+    card.classList.add("center");
     if (card.classList.contains("away")) {
       card.style.transform = `translateY(-170vh) rotate(-48deg)`;
     } else {
