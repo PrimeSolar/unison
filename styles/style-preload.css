@@ -27,6 +27,8 @@ body.loading .loader {
   animation: brighten 1s;
 }
 
+/* The style sheet includes detailed property comments
+to support stakeholders with varying CSS knowledge. */
 body.loading main,
 body.loading footer-container {
   display: none;
