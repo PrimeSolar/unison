@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
   <head>
     <meta charset="utf-8" />
+
+    <!-- Viewport settings. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author" content="Vladislav Kazantsev" />
+    <meta name="copyright" content="© 2026 Vladislav Kazantsev" />
   </head>
 
   <body>
     <noscript>Please activate JavaScript for the full experience.</noscript>
     <div class="py-5">
-      <h1 class="display-5 fw-bold text-black text-center pb-5">About</h1>
+      <h1
+        class="display-5 fw-bold text-black text-center pb-5"
+        itemprop="headline"
+      >
+        About
+      </h1>
       <div class="col-lg-6 mx-auto">
         <p class="fs-5 mb-4 text-center"></p>
         <p>
@@ -34,10 +45,14 @@
       </div>
     </div>
 
+    <!-- Custom web component for footer content initialized via JS (JavaScript). -->
     <footer-container></footer-container>
 
-    <script src="scripts/components-min.js"></script>
-    <script src="scripts/p-1-line-indent-min.js"></script>
-    <script src="scripts/meta-tags-min.js"></script>
+    <script type="text/javascript" src="scripts/components-min.js"></script>
+    <script
+      type="text/javascript"
+      src="scripts/p-1-line-indent-min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/meta-tags-min.js"></script>
   </body>
 </html>
